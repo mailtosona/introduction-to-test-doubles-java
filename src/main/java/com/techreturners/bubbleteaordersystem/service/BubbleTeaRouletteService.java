@@ -13,8 +13,8 @@ public class BubbleTeaRouletteService {
         this.RANDOM = random;
     }
 
-    public BubbleTeaTypeEnum getRandomBubbleTeaType() {
-        return BubbleTeaTypeEnum.values()[RANDOM.nextInt(SIZE)];
+
+    public BubbleTeaTypeEnum getRandomBubbleTeaType() {Random random = new Random();return BubbleTeaTypeEnum.values()[random.nextInt(SIZE)];
     }
 
 }
