@@ -42,6 +42,9 @@ public class BubbleTeaOrderServiceSpyTest {
 
         //Act
         BubbleTeaOrderRequest result = bubbleTeaOrderService.createOrderRequest(bubbleTeaRequest);
+        //Check the spied messenger was called with BubbleTeaOrderRequest result
+        verify(spiedMessenger).sendBubbleTeaOrderRequestEmail(result);
+        verify(spiedMessenger, times(1)).sendBubbleTeaOrderRequestEmail(result);
 
         //Assert
         assertEquals(expectedResult.getName(), result.getName());

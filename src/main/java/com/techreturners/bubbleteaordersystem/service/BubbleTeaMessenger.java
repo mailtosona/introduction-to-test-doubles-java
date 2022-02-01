@@ -16,6 +16,8 @@ public class BubbleTeaMessenger {
 
         simpleLogger.addLoggingText("Yay! I just sent the Order Request email for the " +
                 "following Bubble Tea Order Request " + bubbleTeaOrderRequest.toString());
+
+
     }
     
 }
